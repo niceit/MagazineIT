@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tạp Chí IT</string>
+
+    <string name="title_section1">Trang 1</string>
+    <string name="title_section2">Trang 2</string>
+    <string name="title_section3">Trang 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_magazine_number">Chọn chuyên mục</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

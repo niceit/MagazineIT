@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity$PlaceholderFragment">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trang Tiếp"
+        android:id="@+id/btn_next_page"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trang Trước"
+        android:id="@+id/btn_previous_page"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/btn_next_page"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="How to work with android"
+        android:id="@+id/magazine_header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:singleLine="false"
+        android:layout_alignParentTop="true"
+        android:enabled="false"
+        android:typeface="monospace"
+        android:textSize="18dp"
+        android:textIsSelectable="false"
+        android:textColor="#ff000000"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/main_content_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btn_next_page"
+        android:layout_alignRight="@+id/btn_next_page"
+        android:layout_alignEnd="@+id/btn_next_page"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_content_text"
+            android:textSize="15dp"
+            android:typeface="monospace"/>
+    </ScrollView>
+
+</RelativeLayout>
